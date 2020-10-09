@@ -1,0 +1,20 @@
+.page{
+    width: 100%;
+    height: auto;
+}
+.content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input-login{
+    width: 100%;
+}
+.button-login{
+    width: 15em;
+}
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }

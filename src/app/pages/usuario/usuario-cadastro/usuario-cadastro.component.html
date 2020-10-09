@@ -1,0 +1,30 @@
+
+<div class="content" fxLayout="column">
+<div class="example-container">
+    <mat-form-field appearance="fill" >
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="matelazza@example.com" [(ngModel)]="usuario.login"  required class="input-login">
+    </mat-form-field>
+  </div>
+  <div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input [(ngModel)]="usuario.senha" matInput [type]="hide ? 'password' : 'text'" class="input-login">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <br>
+<button mat-raised-button (click)="logar()" class="button-login">Logar</button>
+
+</div>
+
+<!-- 
+<div class="page">
+<div class="login">
+    <input [(ngModel)]="usuario.login" matInput placeholder="Login" type="text">
+    <input [(ngModel)]="usuario.senha" matInput placeholder="Senha" type="password">
+    <button mat-raised-button (click)="logar()">Logar</button>
+</div>
+
+</div> -->
